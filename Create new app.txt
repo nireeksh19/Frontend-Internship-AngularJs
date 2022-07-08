@@ -1,8 +1,0 @@
--> node --version
--> ng --version
--> ng new myfirstangularapp
--> cd myfirstangularapp
--> code .
--> New Terminal ->command prompt
--> ng serve -o
--> default 4200
