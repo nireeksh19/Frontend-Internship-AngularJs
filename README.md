@@ -19,3 +19,7 @@ Create a new angular app
 -> ng serve -o
 
 -> default 4200
+
+#Create a new components
+
+ng g c component-name
