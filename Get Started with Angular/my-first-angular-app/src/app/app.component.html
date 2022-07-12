@@ -1,36 +1,6 @@
-<!-- String interpolation -->
-<h1>Helllo This is {{title}}</h1>
-<h3>My name is {{name}}</h3>
-
-<img src="assets/imag2.jpg" alt="imagehere" height="100" width="100">
-<br>
-<!-- Property binding -->
-<img [src]="image" alt="" height="100" width="100">
-<br>
-<!-- Event binidng  -->
-<button (click)="onClick()">Event Binding</button><br><br>
-<br>
-<button (click)="onClick1()">Event Binding-console</button>
-<br>
-<!-- ngModel directive for two way modelling -->
-<h4>Anything entered here will be displayed</h4>
-<input [(ngModel)]="randomNumber" type="text">
-<br>
-<h4>displayed here :</h4><br>
-<h4>{{randomNumber}}</h4>
-<hr>
-<br>
-<h3>ngFor Directive (loops)</h3>
-<ul>
-    <li *ngFor="let course of courses">
-        {{course.courseid}} - {{course.coursename}}
-    </li>
-</ul>
-
-
-<input [(ngModel)]="mycolor" type="text">
-<!-- <input [(ngModel)]="bgcolor" type="text"> -->
-<div [ngStyle]="{'color':mycolor}">Change the color</div>
-
+<app-nav></app-nav>
+<app-carousel></app-carousel>
+<app-home></app-home>
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>
