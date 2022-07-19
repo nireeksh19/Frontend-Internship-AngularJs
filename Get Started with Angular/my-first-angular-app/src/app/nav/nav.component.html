@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" routerLink="#">Navbar</a>
+    <a class="navbar-brand" routerLink="">Tech company</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,21 +10,25 @@
           <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink=""></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" routerLink="/career">Career</a>
-            <a class="dropdown-item" routerLink="/cards">Cards</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" routerLink="/courses">Courses</a>
-          </div>
+          <a class="nav-link" routerLink="/career">Career</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" routerLink="#">Disabled</a>
+          <a class="nav-link" routerLink="/cards">Cards</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="/courses" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" >Vue.js</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" >React.js</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" >Angular.js</a>
+          </div>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="" (click)="admin()">Login(admin only)</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

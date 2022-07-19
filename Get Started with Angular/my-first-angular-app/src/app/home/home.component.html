@@ -1,7 +1,7 @@
 
       <!-- String interpolation -->
-<h1>Helllo This is {{title}}</h1>
-<h3>My name is {{name}}</h3>
+<h1 class="fame">Helllo This is {{title}}</h1>
+<h3 id="hey">My name is {{name}}</h3>
 
 <img src="assets/imag2.jpg" alt="imagehere" height="100" width="100">
 <br>
@@ -33,5 +33,33 @@
 <!-- <input [(ngModel)]="bgcolor" type="text"> -->
 <div [ngStyle]="{'color':mycolor}">Change the color</div>
 
+<hr>
+<!--Multiple Styles-->
+<p [ngStyle]="{'color': 'purple',
+                 'font-size': '24px',
+                 'font-weight': 'bold',
+                 'font-family':'cursive',
+                  'text-shadow':'3px 2px 3px yellow'}">
+    Multiple styles
+</p>
+<hr>
+<!-- ngStyle Demo -->
+<ul *ngFor="let person of people">
+    <li [ngStyle]="{'font-size.px':16}" [style.color]="getColor(person.country)">{{ person.name }}-({{ person.country
+        }})
+    </li>
+</ul>
+<hr>
+<!-- ngClass Demo -->
+<ul *ngFor="let person of people">
+    <li [class.text-danger]="person.country === 'UK'" [class.text-info]="person.country === 'USA'"
+        [class.text-success]="person.country === 'IN'" [class.text-primary]="person.country === 'AUS'">{{ person.name }} ({{ person.country }})
+    </li>
+</ul>
+<br>
+<!--ngClass-->
+<div class="row" class="container-fluid">
+    <div [ngClass]="cssArray"> Red Text with Size 20px : from component as object</div>
+</div>
 
-
+<hr>

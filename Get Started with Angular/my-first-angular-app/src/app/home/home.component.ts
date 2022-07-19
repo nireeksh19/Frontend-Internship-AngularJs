@@ -11,57 +11,98 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
 
-//String interpolation
-title = 'my-first-angular-app';
-name = 'Nireeksh';
-randomNumber = '';
-// Property binding
 
-image = '/assets/imag1.jpg';
-// event binding
-onClick() {
-  alert('I am an event binding example !!');
-}
+  //String interpolation
+  title = 'my-first-angular-app';
+  name = 'Nireeksh';
+  randomNumber = '';
+  // Property binding
 
-onClick1() {
-  console.log('I am an event binding example !!');
-}
-
-// *ngFor directive
-courses:Courses[]=
-[
-  {
-    courseid:"1",
-    coursename:'Angular Js'
-  },
-  {
-    courseid:"2",
-    coursename:'React Js'
-  },
-  {
-    courseid:"3",
-    coursename:'Vue Js'
+  image = '/assets/imag1.jpg';
+  // event binding
+  onClick() {
+    alert('I am an event binding example !!');
   }
-]
 
-// ngStyle
-mycolor:string='red';
-bgcolor:string='red';
+  onClick1() {
+    console.log('I am an event binding example !!');
+  }
 
-//  ngClass
-// cssprop:string='violet size24';
-// css:CSSClass= new CSSClass();
-// cssprop:string[]=['violet','size24'];
+  // *ngFor directive
+  courses: Courses[] =
+    [
+      {
+        courseid: "1",
+        coursename: 'Angular Js'
+      },
+      {
+        courseid: "2",
+        coursename: 'React Js'
+      },
+      {
+        courseid: "3",
+        coursename: 'Vue Js'
+      }
+    ]
+
+  // ngStyle
+  mycolor: string = 'red';
+  bgcolor: string = 'red';
+
+ //ngClass
+  //Using JavaScript object
+  cssClass: CssClass = new CssClass();
+  //ngClass using Array
+  cssArray: string[] = ['red', 'size20','yellow','shadow'];
+
+  getColor(country: any) {
+    (2)
+    switch (country) {
+      case 'UK':
+        return 'green';
+      case 'USA':
+        return 'blue';
+      case 'IN':
+        return 'red';
+      default:
+        return 'pink';
+    }
+  }
+  people: any[] = [
+    {
+      "name": "John",
+      "country": 'UK'
+    },
+    {
+      "name": "Peter",
+      "country": 'USA'
+    },
+    {
+      "name": "Shaun",
+      "country": 'AUS'
+    },
+    {
+      "name": "Paul",
+      "country": 'IN'
+    },
+    {
+      "name": "Sam",
+      "country": 'USA'
+    }
+  ];
 
 }
-class Courses{
-courseid:string | undefined;
-coursename:string | undefined;
+class Courses {
+  courseid: string | undefined;
+  coursename: string | undefined;
 }
 
-// class CSSClass{
-//   red:boolean=true;
-//   size24:boolean=true;
-// }
+//ngClass Using JavaScript object
+class CssClass {
+  red: boolean = true;
+  size20: boolean = true;
+  yellow:boolean=true;
+  shadow:boolean=true;
+}
+
