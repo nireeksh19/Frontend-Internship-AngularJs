@@ -1,37 +1,36 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+// for example to get model of json file 
 import { AngularClass } from './angular-class';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AngularServiceService {
+export class ReactServiceService {
 
-  angular:AngularClass[]=
-  [
+  react:AngularClass[]=[
     {
       id:1,
-    name:"nireeksh",
+    name:"kumar",
     designation:"SDE1",
     phone:"9837373737"
     },
     {
       id:2,
-    name:"shreyas",
+    name:"preran",
     designation:"designer",
     phone:"983788888"
     }
   ]
 
   public getdetails():any{
-    const angularObservable = new Observable(observer=>{
+    const reactObservable = new Observable(observer=>{
       setTimeout(()=>{
-        observer.next(this.angular)
+        observer.next(this.react)
       },1000)
     })
-    return angularObservable;
+    return reactObservable;
   }
-
   constructor() { }
 }

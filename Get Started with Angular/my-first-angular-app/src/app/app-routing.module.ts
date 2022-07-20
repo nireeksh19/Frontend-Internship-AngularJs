@@ -6,6 +6,7 @@ import { CareerComponent } from './career/career.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
+import { REactCourseComponent } from './react-course/react-course.component';
 
 const routes: Routes = [
   {  path:"",component:CarouselComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"cards",component:CardComponent},
   {  path:"career",component:CareerComponent},
   {  path:"courses",component:CoursesComponent},
-  {path:"angularcourse",component:AngularCourseComponent}
+  {path:"angularcourse",component:AngularCourseComponent},
+  {path:"reactcourse",component:REactCourseComponent}
 ];
 
 
