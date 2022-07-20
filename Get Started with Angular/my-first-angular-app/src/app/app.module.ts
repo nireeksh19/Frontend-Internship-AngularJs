@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { CareerComponent } from './career/career.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CardComponent } from './card/card.component';
+import { AngularCourseComponent } from './angular-course/angular-course.component';
+import { REactCourseComponent } from './react-course/react-course.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CardComponent } from './card/card.component';
     HomeComponent,
     CareerComponent,
     CoursesComponent,
-    CardComponent
+    CardComponent,
+    AngularCourseComponent,
+    REactCourseComponent
   ],
   imports: [
     BrowserModule,
