@@ -13,6 +13,8 @@ import { CoursesComponent } from './courses/courses.component';
 import { CardComponent } from './card/card.component';
 import { AngularCourseComponent } from './angular-course/angular-course.component';
 import { REactCourseComponent } from './react-course/react-course.component';
+import { SignupComponent } from './signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { REactCourseComponent } from './react-course/react-course.component';
     CoursesComponent,
     CardComponent,
     AngularCourseComponent,
-    REactCourseComponent
+    REactCourseComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
