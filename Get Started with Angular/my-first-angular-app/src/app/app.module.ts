@@ -15,6 +15,7 @@ import { AngularCourseComponent } from './angular-course/angular-course.componen
 import { REactCourseComponent } from './react-course/react-course.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardComponent,
     AngularCourseComponent,
     REactCourseComponent,
-    SignupComponent
+    SignupComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

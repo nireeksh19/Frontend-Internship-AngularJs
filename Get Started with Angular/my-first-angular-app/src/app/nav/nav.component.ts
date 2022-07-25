@@ -15,4 +15,12 @@ export class NavComponent implements OnInit {
     alert("Login for Admin Only !!!!!");
   }
 
+  courseSelected:string= ''; //Angular
+
+  AddCourse(courseId: string): void {
+    if (!courseId) { return; }
+    this.courseSelected = courseId; //Angular
+    console.log(courseId) //Angular
+  }
+
 }
